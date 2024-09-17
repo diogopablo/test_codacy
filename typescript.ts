@@ -1,4 +1,3 @@
-
 function additionner(a: number, b: number): number {
     return a + b;
 }

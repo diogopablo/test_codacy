@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'exemple</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Erreur : fichier CSS manquant -->
+</head>
+<body>
+    <h1>Bienvenue sur ma page</h1>
+    <p>Ceci est un exemple de page HTML avec des erreurs.</p>
+    
+    <ul>
+        <li>Élément 1</li>
+        <li>Élément 2</li>
+        <li>Élément 3</li>
+    </ul>
+
+    <img src="image.jpg" alt="Image d'exemple"> <!-- Erreur : image manquante -->
+    
+    <script>
+        function afficherMessage() {
+            console.log("Ceci est un message de la console");
+        }
+
+        // Erreur : appel de fonction non défini
+        afficherMesage(); 
+
+        for (var i = 0; i < 5; i++) {
+            console.log("Compteur: " + i);
+        }
+
+        // Erreur : utilisation de 'var' au lieu de 'let' ou 'const'
+        var x = 10;
+        if (x > 5) {
+            var x = 20; // Erreur : portée de 'var' non souhaitée
+        }
+        console.log(x); // Affiche 20, ce qui peut être déroutant
+
+        // Erreur : balise fermante manquante
+        <div>
+            <p>Un paragraphe sans balise fermante
+        </div>
+    </script>
+</body>
+</html>

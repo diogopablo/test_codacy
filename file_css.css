@@ -1,0 +1,47 @@
+
+/* Exemple de code CSS avec des erreurs */
+
+body {
+    background-color: blue; /* Erreur : couleur de fond non accessible */
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    /* Erreur : propriété non valide */
+    text-decoration: underline; /* Erreur : propriété non valide pour les paragraphes */
+}
+
+.container {
+    width: 100%; /* Erreur : largeur non définie pour les conteneurs */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Erreur : sélecteur non valide */
+h1 h2 {
+    color: red; /* Erreur : h2 ne peut pas être un enfant direct de h1 */
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Erreur : utilisation de valeurs arbitraires */
+.button:hover {
+    background-color: #ff0000; /* Erreur : couleur non accessible */
+    /* Erreur : propriété non valide */
+    transform: scale(1.1; /* Erreur de syntaxe : parenthèse manquante */
+}

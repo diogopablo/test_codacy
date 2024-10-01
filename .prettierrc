@@ -1,0 +1,7 @@
+{  
+  "semi": true, // Utiliser des points-virgules à la fin des lignes  
+  "singleQuote": true, // Utiliser des guillemets simples  
+  "tabWidth": 2, // Définit la largeur des tabulations à 2 espaces  
+  "trailingComma": "es5", // Ajouter une virgule à la fin des listes d'objets  
+  "printWidth": 80 // Limiter la largeur des lignes à 80 caractères  
+}

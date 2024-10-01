@@ -1,0 +1,31 @@
+{  
+  "env": {  
+    "browser": true,  
+    "es6": true,  
+    "node": true  
+  },  
+  "extends": [  
+    "eslint:recommended", // Utiliser les règles recommandées par ESLint  
+    "plugin:prettier/recommended" // Intégration de Prettier avec ESLint  
+  ],  
+  "parserOptions": {  
+    "ecmaVersion": 2020,  
+    "sourceType": "module" // Utiliser les modules ES6  
+  },  
+  "rules": {  
+    // Meilleures pratiques pour la sécurité  
+    "no-eval": "error", // Éviter l'utilisation de eval()  
+    "no-new-func": "error", // Éviter l'utilisation de Function()  
+    "no-with": "error", // Éviter l'utilisation de with  
+    "eqeqeq": "error", // Utiliser === et !== au lieu de == et !=  
+    "consistent-return": "error", // Avoir une déclaration de retour cohérente dans les fonctions  
+
+    // Meilleures pratiques générales  
+    "no-unused-vars": "warn", // Avertir sur les variables non utilisées  
+    "no-console": "warn", // Avertir sur les appels de console.log  
+    "curly": ["error", "all"], // Exiger des accolades pour toutes les instructions if  
+    "prefer-const": "error" // Préférer const pour les variables non réaffectées  
+
+  
+  }  
+}

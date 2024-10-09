@@ -1,1 +1,23 @@
-{"name":"cadacy_project","version":"1.0.0","description":"Codacy","main":"index.js","scripts":{"lint":"eslint .","lint:fix":"eslint . --fix","format":"prettier --write .","test":"echo \"Erreur : pas de test spécifié\" && exit 1"},"author":"Pablo","license":"MIT","devDependencies":{"eslint":"^8.30.0","eslint-config-prettier":"^8.5.0","eslint-plugin-prettier":"^4.2.1","prettier":"^2.8.3"},"keywords":[]}
+{
+  "name": "test_codacy",
+  "version": "1.0.0",
+  "description": "A project to test security tools",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "audit": "dependency-check . --ignore 'node_modules' --json",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dependency-check": "^5.0.0-0",
+    "express": "^4.21.0",
+    "lodash": "^4.17.21",
+    "maven": "^5.0.0",
+    "moment": "^2.30.1"
+  }
+}

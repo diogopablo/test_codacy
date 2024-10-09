@@ -1,0 +1,26 @@
+{
+  "name": "cadacy_project",
+  "version": "1.0.0",
+  "description": "Codacy",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "audit": "dependency-check . --ignore 'node_modules' --json",
+    "test": "echo \"Erreur : pas de test spécifié\" && exit 1"
+  },
+  "author": "Pablo",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "dependency-check": "^4.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6",
+    "prettier": "^2.8.3"
+  },
+  "keywords": []
+}
